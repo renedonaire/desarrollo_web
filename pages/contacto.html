@@ -1,0 +1,98 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--              Entrega René Donaire - idea: Transportes Juan              -->
+<!-- ----------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dde9c62a8e.js" crossorigin="anonymous"></script>
+        <title>Contacto</title>
+    </head>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                         ENCABEZADO Y NAVEGACION                         -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header>
+        <!-- Menú de navegación, incluye el logotipo -->
+        <nav class="navegacion">
+            <img class="logo" src="../images/logo.svg" alt="logo">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="cobertura.html">Cobertura</a></li>
+                <li><a href="cotiza.html">Cotice</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            CUERPO PRINCIPAL                             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <main>
+        <h1>Contáctenos</h1>
+        <section class="seccionContacto">
+            <form class="formularioContacto" action="">
+                <section class="izquierdo">
+                    <select name="servicio" required>
+                        <option value="" disabled selected hidden>Usted es Cliente tipo...:</option>
+                        <option value="Servicio Clase 1">Particular</option>
+                        <option value="Servicio Clase 2">Empresa</option>
+                        <option value="Servicio Clase 3">Gobierno</option>
+                    </select>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                    <input type="email" id="email" name="email" placeholder="Correo">
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+                    <label for="suscripcion">¿Desea recibir noticias / ofertas?</label>
+                    <input class="casilla" type="checkbox" id="suscripcion" name="suscripcion" value="Si">
+                </section>
+                <section class="derecho">
+                    <textarea name="consulta" id="consulta" cols="70" rows="18" placeholder="Escríbanos aquí"></textarea>
+                        <div>
+                            <input type="reset" class="boton" value="Limpiar">
+                            <input type="submit" class="boton" value="Enviar">
+                        </div>
+                </section>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              PIE DE PAGINA                              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+        <!--¿Se puede repetir sólo una vez y llamarlo en cada documento?-->
+        <section class="seccionFooter">
+            <article class="izquierdo">
+                <h2>Hablemos:</h2>
+            </article>
+            <article class="centro">
+                <div class="footerInterior">
+                    <i class="iconoCentro fa fa-mobile-alt"></i>
+                    <p>Teléfono 987 654 321</p>
+                </div>
+                <div class="footerInterior">
+                    <i class="iconoCentro fa fa-envelope"></i>
+                    <a href="mailto:contacto@transportesjuan.cl">contacto@transportesjuan.cl</a>
+                </div>
+            </article>
+            <article class="derecho">
+                <i class="iconoDerecho fa fa-facebook"></i>
+                <i class="iconoDerecho fa fa-whatsapp"></i>
+                <i class="iconoDerecho fa fa-youtube"></i>
+            </article>
+        </section>
+    </footer>
+
+</html>

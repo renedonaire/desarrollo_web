@@ -1,0 +1,104 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--              Entrega René Donaire - idea: Transportes Juan              -->
+<!-- ----------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dde9c62a8e.js" crossorigin="anonymous"></script>
+        <title>Cotiza</title>
+    </head>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                         ENCABEZADO Y NAVEGACION                         -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header>
+        <nav class="navegacion">
+            <img class="logo" src="../images/logo.svg" alt="logo">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="cobertura.html">Cobertura</a></li>
+                <li><a href="cotiza.html" class="activo">Cotice</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            CUERPO PRINCIPAL                             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <main>
+        <!-- Sección Cotiza -->
+        <h1>Cotice aquí:</h1>
+        <section class="seccionCotiza">
+            <article class="izquierdo">
+                <h2>Seleccione</h2>
+                <p>Desde la lista desplegable, el tipo de servicio que requiere. <br>
+                    En el resto de los campos complete los datos solicitados. <br><br>
+                    Le enviaremos un correo con la cotización por nuestros servicios.</p>
+            </article>
+            <article class="derecho">
+                <form class="formulario" action="">
+                    <section>
+                        <select name="servicio" required>
+                            <option value="" disabled selected hidden>Elije tu servicio:</option>
+                            <option value="Servicio Clase 1">Servicio Clase 1</option>
+                            <option value="Servicio Clase 2">Servicio Clase 2</option>
+                            <option value="Servicio Clase 3">Servicio Clase 3</option>
+                        </select>
+                        <!-- Cómo coloco un selector de fechas?? -->
+                    </section>
+                    <section>
+                        <input type="text" id="nombre" name="nombre" value="Tu nombre">
+                        <input type="text" id="direccion" name="direccion" value="Tu dirección">
+                        <input type="email" id="email" name="email" value="Tu correo">
+                        <input type="text" id="telefono" name="telefono" value="Tu teléfono">
+                        <!--¿Cómo se aplica estilo a los placeholders?-->
+                    </section>
+                    <section>
+                        <input type="submit" class="boton" value="Cotizar">
+                    </section>
+                </form>
+            </article>
+        </section>
+    </main>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              PIE DE PAGINA                              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+        <!--¿Se puede repetir sólo una vez y llamarlo en cada documento?-->
+        <section class="seccionFooter">
+            <article class="izquierdo">
+                <h2>Contáctenos</h2>
+            </article>
+            <article class="centro">
+                <div class="footerInterior">
+                    <i class="iconoCentro fa fa-mobile-alt"></i>
+                    <p>Teléfono 987 654 321</p>
+                </div>
+                <div class="footerInterior">
+                    <i class="iconoCentro fa fa-envelope"></i>
+                    <a href="mailto:contacto@transportesjuan.cl">contacto@transportesjuan.cl</a>
+                </div>
+            </article>
+            <article class="derecho">
+                <i class="iconoDerecho fa fa-facebook"></i>
+                <i class="iconoDerecho fa fa-whatsapp"></i>
+                <i class="iconoDerecho fa fa-youtube"></i>
+            </article>
+        </section>
+    </footer>
+
+</html>
