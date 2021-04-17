@@ -22,42 +22,53 @@
     <!--                         ENCABEZADO Y NAVEGACION                         -->
     <!-- ----------------------------------------------------------------------- -->
     <header>
-        <!-- <nav class="navegacion">
-            <img class="logo" src="./images/logo.svg" alt="logo">
-            <ul>
-                <li><a class="activo" href="index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/cobertura.html">Cobertura</a></li>
-                <li><a href="./pages/cotiza.html">Cotice</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navegacion">
+            <!-- Logo -->
+            <img class="navbar-brand logo" src="./images/logo.svg" alt="logo">
+            <!-- Icono hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
-                <a href="#">
-                    <img class="logo" src="./images/logo.svg" alt="logo">
-                </a>
-                <ul class="nav nav-justified">
-                    <li class="nav-item active">
+            <!-- Items del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Items visibles en pantallas más grandes -->
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link activo" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="./pages/servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="./pages/cobertura.html">Cobertura</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="./pages/cotiza.html">Cotice</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <!-- Items visibles en pantallas más pequeñas -->
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link activo" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="./pages/cobertura.html">Cobertura</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="./pages/cotiza.html">Cotice</a>
+                    </li>
+                    <li class="nav-item d-md-none">
                         <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>

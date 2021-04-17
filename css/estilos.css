@@ -56,18 +56,17 @@ footer {
 }
 
 .navegacion {
-	grid-area: nav;
-	position: fixed;
+	/* grid-area: nav;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 5vh;
+	height: 5vh; */
 	background-image: linear-gradient(to left, #33383b, black);
-	padding: 1rem;
+	/* padding: 1rem;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: center; */
 }
 
 ul {
@@ -101,7 +100,7 @@ li a:hover {
 }
 
 .activo {
-	color: orange;
+	color: orange !important;
 }
 
 /* ---------------------------------- TEXTO --------------------------------- */
