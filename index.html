@@ -34,10 +34,10 @@
             </ul>
         </nav> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navegacion">
+            <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
                 <a href="#">
                     <img class="logo" src="./images/logo.svg" alt="logo">
                 </a>
@@ -113,25 +113,33 @@
     <!-- ----------------------------------------------------------------------- -->
     <footer>
         <!--¿Se puede repetir sólo una vez y llamarlo en cada documento?-->
-        <section class="seccionFooter">
-            <article class="izquierdo">
-                <h2>Contáctenos</h2>
-            </article>
-            <article class="centro">
-                <div class="footerInterior">
-                    <i class="iconoCentro fa fa-mobile-alt"></i>
-                    <p>Teléfono 987 654 321</p>
-                </div>
-                <div class="footerInterior">
-                    <i class="iconoCentro fa fa-envelope"></i>
-                    <a href="mailto:contacto@transportesjuan.cl">contacto@transportesjuan.cl</a>
-                </div>
-            </article>
-            <article class="derecho">
-                <i class="iconoDerecho fa fa-facebook"></i>
-                <i class="iconoDerecho fa fa-whatsapp"></i>
-                <i class="iconoDerecho fa fa-youtube"></i>
-            </article>
+        <section class="row seccionFooter">
+            <!--Columna izquierda-->
+            <div class="col-lg-4">
+                <article class="izquierdo">
+                    <h2>Contáctenos</h2>
+                </article>
+            </div>
+            <!--Columna central-->
+            <div class="col-lg-4">
+                <article class="centro">
+                    <div class="footerInterior">
+                        <i class="iconoCentro fa fa-mobile-alt"></i>
+                        <p>Teléfono 987 654 321</p>
+                    </div>
+                    <div class="footerInterior">
+                        <i class="iconoCentro fa fa-envelope"></i>
+                        <a href="mailto:contacto@transportesjuan.cl">contacto@transportesjuan.cl</a>
+                    </div>
+                </article>
+            </div>
+            <!--Columna derecha-->
+            <div class="col-lg-4">
+                <article class="derecho">
+                    <i class="iconoDerecho fa fa-facebook"></i>
+                    <i class="iconoDerecho fa fa-whatsapp"></i>
+                    <i class="iconoDerecho fa fa-youtube"></i>
+                </article>
         </section>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
