@@ -193,6 +193,23 @@ p {
 	text-align: center;
 }
 
+/* Estilos para texto de carousel */
+.carousel-caption h2{
+	color: white;
+	text-shadow: 3px 3px 4px black;
+}
+
+.carousel-caption h3{
+	color: white;
+	text-shadow: 3px 3px 4px black;
+}
+
+.up {
+    position: absolute; 
+	top: 2rem;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*                           ESTILOS PARA "NOSOTROS"                          */
 /* -------------------------------------------------------------------------- */
