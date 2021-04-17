@@ -481,7 +481,7 @@ textarea {
 /* -------------------------------------------------------------------------- */
 .seccionFooter {
 	display: flex;
-	/* justify-content: center; */
+	justify-content: center;
 	align-items: flex-start;
 	width: 100vw;
 	height: 20vh;
@@ -493,9 +493,8 @@ textarea {
 .seccionFooter .izquierdo {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: flex-start;
-	width: 20%;
 	height: 100%;
 	margin-left: 20%
 }
@@ -510,8 +509,8 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	width: 20%;
 	height: 100%;
+	margin-left: 8rem;
 }
 
 .seccionFooter .centro .footerInterior{
@@ -542,9 +541,7 @@ textarea {
 .seccionFooter .derecho {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-	width: 20%;
+	justify-content: flex-start;
 	height: 100%;
 	margin-right: 20%;
 }
@@ -558,6 +555,7 @@ textarea {
 	font-size: 2rem;
 	color: white;
 	padding: 10px;
+	margin-left: 2rem;
 }
 
 
