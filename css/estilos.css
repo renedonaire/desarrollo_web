@@ -14,26 +14,20 @@ main {
 	/*Revisar imagen de fondo. Se puede generar como vector? */
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: 5vh 10vh 55vh 5vh;
+	grid-template-rows: 10vh 64vh;
 	gap: 0px 0px;
 	grid-template-areas:
-		"nav nav nav nav nav nav nav"
 		"up up up up up up up"
-		"main main main main main main main"
-		"down down down down down down down";
+		"main main main main main main main";
 	justify-items: center;
 	background-image: url(../images/fondo.png);
 	background-size: 100vw;
-	height: 80vh;
+	height: 75vh;
 }
 
 section {
-	grid-area: main;
 	grid-column: 2 / span 5;
 	justify-items: center;
-	display: flex;
-	flex-wrap: nowrap;
-	overflow: auto;
 	background-color: lightgray;
 	border-radius: 1rem;
 }
@@ -47,7 +41,7 @@ section article {
 footer {
 	background-color: gray;
 	text-align: center;
-	height: 20vh;
+	height: 15vh;
 }
 
 /* ------------------------------- NAVEGACION ------------------------------- */
@@ -56,17 +50,8 @@ footer {
 }
 
 .navegacion {
-	/* grid-area: nav;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5vh; */
 	background-image: linear-gradient(to left, #33383b, black);
-	/* padding: 1rem;
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center; */
+	padding: 1rem;
 }
 
 ul {
@@ -83,9 +68,9 @@ li {
 	font-size: 18px;
 }
 
-li:hover{
+li:hover {
 	position: relative;
-	transform: scale(1.5) skewY(-5deg);
+	transform: scale(1.2) skewY(-3deg);
 }
 
 li a {
@@ -107,7 +92,7 @@ li a:hover {
 h1 {
 	grid-area: up;
 	align-self: center;
-	font-size: 2.5vw;
+	font-size: 4.5vh;
 	color: black;
 	font-family: "Poppins", sans-serif;
 	font-weight: 600;
@@ -144,70 +129,52 @@ p {
 .seccionInicio {
 	display: flex;
 	flex-wrap: nowrap;
-	overflow: auto;
+	overflow: hidden;
 	width: 70vw;
-	height: 64vh;
-	/* Sin márgenes para acomodar el carousel */
 	margin: 0;
 	padding: 0;
 }
 
-.seccionInicio .izquierdo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.seccionInicio .derecho {
-	height: 90%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-@keyframes furgon{
-	0% {left: 100%; scale: 10%;}
-	100% {left: 0%; scale: 100%;}
-}
-
-.animacionFurgon{
-	position: relative;
-	animation-name: furgon;
-	animation-duration: 2s;
-}
-
-@keyframes llamada{
-	0% {transform: scaleX(0%);}
-	100% {transform: scaleX(100%);}
-}
-
-.llamada{
-	position: relative;
-	animation-name: llamada;
-	animation-duration: 2s;
-}
-
-.derecho p {
-	text-align: center;
-}
-
-/* Estilos para texto de carousel */
-.carousel-caption h2{
+/* Estilos para carousel */
+.carousel-caption h2 {
+	font-size: 2rem;
 	color: white;
 	text-shadow: 3px 3px 4px black;
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
+	font-size: 1.5rem;
 	color: white;
 	text-shadow: 3px 3px 4px black;
 }
 
 .up {
-    position: absolute; 
+	position: absolute;
 	top: 2rem;
 }
 
+.down{
+	position: absolute;
+	bottom: 8rem;
+}
+
+.carousel {
+	width: 100%
+}
+
+.item {
+	overflow: hidden;
+}
+
+/* Truco para centrar la imagen en la vista móvil */
+.carousel img {
+	height: 100%;
+	max-width: none;
+	left: 60%;
+	position: relative;
+	transform: translateX(-60%);
+	-webkit-transform: translateX(-60%);
+}
 
 /* -------------------------------------------------------------------------- */
 /*                           ESTILOS PARA "NOSOTROS"                          */
@@ -240,7 +207,7 @@ p {
 	grid-row: 1 / 4;
 }
 
-.imagenDos{
+.imagenDos {
 	width: 100%;
 	height: 100%;
 	grid-column: 2;
@@ -275,7 +242,7 @@ p {
 	grid-row: 3;
 }
 
-.imagen:hover{
+.imagen:hover {
 	transform: skewY(-5deg) scale(0.8);
 }
 
@@ -474,31 +441,29 @@ textarea {
 	resize: none;
 }
 
-
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS PARA FOOTER                            */
 /* -------------------------------------------------------------------------- */
 .seccionFooter {
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
 	width: 100vw;
-	height: 20vh;
 	margin: 0;
-	background-image: linear-gradient(to right, #33383b , black);
+	background-image: linear-gradient(to right, #33383b, black);
+	border-radius: 0;
 }
 
 /* ----------------------------- LADO IZQUIERDO ----------------------------- */
 .seccionFooter .izquierdo {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: flex-start;
 	height: 100%;
-	margin-left: 20%
 }
 
-.seccionFooter .izquierdo h2{
+.seccionFooter .izquierdo h2 {
+	font-size: 1.7rem;
 	color: white;
 }
 
@@ -509,26 +474,26 @@ textarea {
 	justify-content: center;
 	align-items: flex-start;
 	height: 100%;
-	margin-left: 8rem;
 }
 
-.seccionFooter .centro .footerInterior{
+.seccionFooter .centro .footerInterior {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 }
 
-.seccionFooter .centro .footerInterior p, a{
+.seccionFooter .centro .footerInterior p,
+a {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	text-decoration: none;
 }
 
-.iconoCentro{
+.iconoCentro {
 	width: 3rem;
 	height: 3rem;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: #33383b;
 	border-radius: 50%;
 	font-size: 1.5rem;
 	color: white;
@@ -536,27 +501,30 @@ textarea {
 	margin-right: 1rem;
 }
 
+.seccionFooter .footerInterior p {
+	font-size: 1rem;
+	color: white;
+}
+
 /* ------------------------------ LADO DERECHO ------------------------------ */
 .seccionFooter .derecho {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	height: 100%;
-	margin-right: 20%;
 }
 
-.iconoDerecho{
+.iconoDerecho {
 	width: 4rem;
 	height: 3.2rem;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: #33383b;
 	border-radius: 20%;
 	font-size: 2rem;
 	color: white;
 	padding: 10px;
 	margin-left: 2rem;
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA FORMULARIOS                          */
