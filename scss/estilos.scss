@@ -49,7 +49,7 @@ footer {
 	height: 4vh;
 }
 
-.navegacion {
+.nav__navegacion {
 	background-image: linear-gradient(to left, #33383b, black);
 	padding: 1rem;
 }
@@ -84,7 +84,7 @@ li a:hover {
 	color: yellow;
 }
 
-.activo {
+.nav__navegacion--activo {
 	color: orange !important;
 }
 
@@ -126,7 +126,7 @@ p {
 /* -------------------------------------------------------------------------- */
 /*                            ESTILOS PARA "INICIO"                           */
 /* -------------------------------------------------------------------------- */
-.seccionInicio {
+.section__seccionInicio {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow: hidden;
@@ -148,32 +148,29 @@ p {
 	text-shadow: 3px 3px 4px black;
 }
 
-.up {
+.carousel-caption--up {
 	position: absolute;
-	top: 2rem;
+	top: 5%;
 }
 
-.down{
+.carousel-caption--down{
 	position: absolute;
-	bottom: 8rem;
+	top: 75%;
 }
 
 .carousel {
 	width: 100%
 }
 
-.item {
-	overflow: hidden;
-}
-
 /* Truco para centrar la imagen en la vista móvil */
-.carousel img {
+.carousel-item__img {
 	height: 100%;
 	max-width: none;
 	left: 60%;
 	position: relative;
 	transform: translateX(-60%);
 	-webkit-transform: translateX(-60%);
+	overflow: hidden;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -444,7 +441,7 @@ textarea {
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS PARA FOOTER                            */
 /* -------------------------------------------------------------------------- */
-.seccionFooter {
+.footer__seccionFooter {
 	display: flex;
 	justify-content: center;
 	width: 100vw;
@@ -454,7 +451,7 @@ textarea {
 }
 
 /* ----------------------------- LADO IZQUIERDO ----------------------------- */
-.seccionFooter .izquierdo {
+.footer__seccionFooter--izquierdo {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -462,13 +459,13 @@ textarea {
 	height: 100%;
 }
 
-.seccionFooter .izquierdo h2 {
+.footer__seccionFooter--izquierdo h2 {
 	font-size: 1.7rem;
 	color: white;
 }
 
 /* --------------------------------- CENTRO --------------------------------- */
-.seccionFooter .centro {
+.footer__seccionFooter--centro {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -476,13 +473,13 @@ textarea {
 	height: 100%;
 }
 
-.seccionFooter .centro .footerInterior {
+.footer__seccionFooter--centro .footerInterior {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 }
 
-.seccionFooter .centro .footerInterior p,
+.footer__seccionFooter--centro .footerInterior p,
 a {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
@@ -501,13 +498,13 @@ a {
 	margin-right: 1rem;
 }
 
-.seccionFooter .footerInterior p {
+.footer__seccionFooter .footerInterior p {
 	font-size: 1rem;
 	color: white;
 }
 
 /* ------------------------------ LADO DERECHO ------------------------------ */
-.seccionFooter .derecho {
+.footer__seccionFooter--derecho {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

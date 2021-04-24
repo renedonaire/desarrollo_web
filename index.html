@@ -22,7 +22,7 @@
     <!--                         ENCABEZADO Y NAVEGACION                         -->
     <!-- ----------------------------------------------------------------------- -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark navegacion">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark nav__navegacion">
             <!-- Logo -->
             <img class="navbar-brand logo" src="./images/logo.svg" alt="logo">
             <!-- Icono hamburguesa -->
@@ -35,7 +35,7 @@
                 <ul class="navbar-nav">
                     <!-- Items visibles en pantallas más grandes -->
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link activo" href="index.html">Inicio</a>
+                        <a class="nav-link nav__navegacion--activo" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
@@ -83,34 +83,48 @@
     <main>
         <h1>Transportes Juan</h1>
         <!-- Slider, cada diapositiva incluye una llamada -->
-        <section class="container-fluid seccionInicio">
-
+        <section class="container-fluid section__seccionInicio">
             <div id="demo" class="carousel slide" data-ride="carousel">
-                <!-- The slideshow -->
+                <!-- Diapositivas -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./images/furgon_slide.jpg" alt="furgón" height=100%>
-                        <div class="carousel-caption down">
+                        <img class="carousel-item__img" src="./images/furgon_slide.jpg" alt="furgón" height=100%>
+                        <!-- Para pantallas grandes -->
+                        <div class="carousel-caption carousel-caption--down d-none d-md-block">
                             <h2>Cargas Grandes y Pequeñas</h2>
                             <h3>Trasladamos todos sus envíos sin importar su tamaño</h3>
                         </div>
+                        <!-- Para móviles -->
+                        <div class="carousel-caption carousel-caption--up d-md-none">
+                            <h2>Cargas Grandes y Pequeñas</h2>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/paquetes_slide.jpg" alt="paquetes" height=100%>
-                        <div class="carousel-caption up">
+                        <img class="carousel-item__img" src="./images/paquetes_slide.jpg" alt="paquetes" height=100%>
+                        <!-- Para pantallas grandes -->
+                        <div class="carousel-caption carousel-caption--up d-none d-md-block">
                             <h2>Todas sus entregas, sin excepción</h2>
                             <h3>Ya sea que tenga una, diez o cien</h3>
                         </div>
+                        <!-- Para móviles -->
+                        <div class="carousel-caption carousel-caption--up d-md-none">
+                            <h2>Todas sus entregas, sin excepción</h2>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/chofer_slide.jpg" alt="chofer" height=100%>
-                        <div class="carousel-caption down">
+                        <img class="carousel-item__img" src="./images/chofer_slide.jpg" alt="chofer" height=100%>
+                        <!-- Para pantallas grandes -->
+                        <div class="carousel-caption carousel-caption--down">
                             <h2>Tomamos todas las medidas de protección</h2>
                             <h3>Nos cuidamos y cuidamos a nuestros clientes</h3>
                         </div>
+                        <!-- Para móviles -->
+                        <div class="carousel-caption carousel-caption--up d-md-none">
+                            <h2>Tomamos todas las medidas de protección</h2>
+                        </div>
                     </div>
                 </div>
-                <!-- Left and right controls -->
+                <!-- Controles -->
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
@@ -127,16 +141,16 @@
     <!-- ----------------------------------------------------------------------- -->
     <footer>
         <!--¿Se puede repetir sólo una vez y llamarlo en cada documento?-->
-        <section class="row seccionFooter">
+        <section class="row footer__seccionFooter">
             <!--Columna izquierda-->
             <div class="col-sm-12 col-md-3">
-                <article class="izquierdo">
+                <article class="footer__seccionFooter--izquierdo">
                     <h2>Contáctenos</h2>
                 </article>
             </div>
             <!--Columna central-->
             <div class="col-sm-12 col-md-3">
-                <article class="centro">
+                <article class="footer__seccionFooter--centro">
                     <div class="footerInterior">
                         <i class="iconoCentro fa fa-mobile-alt"></i>
                         <p>Teléfono 987 654 321</p>
@@ -149,7 +163,7 @@
             </div>
             <!--Columna derecha-->
             <div class="col-sm-12 col-md-3">
-                <article class="derecho">
+                <article class="footer__seccionFooter--derecho">
                     <i class="iconoDerecho fa fa-facebook"></i>
                     <i class="iconoDerecho fa fa-whatsapp"></i>
                     <i class="iconoDerecho fa fa-youtube"></i>
