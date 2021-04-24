@@ -57,16 +57,14 @@ li {
   display: inline-block;
   position: relative;
   font-size: 18px; }
-
-li:hover {
-  position: relative;
-  transform: scale(1.2) skewY(-3deg); }
-
-li a {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-decoration: none; }
+  li :hover {
+    position: relative;
+    transform: scale(1.2) skewY(-3deg); }
+    li :hover a {
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      text-decoration: none; }
 
 .nav__navegacion--activo {
   color: #FFA500 !important; }
@@ -218,23 +216,23 @@ p {
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA "SERVICIOS"                          */
 /* -------------------------------------------------------------------------- */
-.seccionServicios {
+.section__seccionServicios {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
   width: 70vw;
   height: 64vh; }
 
-.seccionServicios .izquierdo {
+.section__seccionServicios--izquierdo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.seccionServicios p {
+.section__seccionServicios p {
   font-style: italic; }
 
-.seccionServicios .derecho {
+.section__seccionServicios--derecho {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -262,14 +260,14 @@ td {
   width: 100%;
   border: 2px solid black; }
 
-section table {
+.section__seccionServicios table {
   margin-top: 1.5rem;
   margin-bottom: 2vh; }
 
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA "COBERTURA"                          */
 /* -------------------------------------------------------------------------- */
-.seccionCobertura {
+.section__seccionCobertura {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
@@ -277,20 +275,19 @@ section table {
   width: 70vw;
   height: 64vh; }
 
-.seccionCobertura .izquierdo {
+.section__seccionCobertura--izquierdo {
   display: flex;
   flex-direction: column; }
+  .section__seccionCobertura--izquierdo .mapa {
+    width: 100%;
+    height: 50vh;
+    margin-top: 1rem;
+    border: 2px solid black; }
 
-.seccionCobertura .izquierdo .mapa {
-  width: 100%;
-  height: 50vh;
-  margin-top: 1rem;
-  border: 2px solid black; }
-
-.seccionCobertura p {
+.section__seccionCobertura p {
   margin-bottom: 2rem; }
 
-.seccionCobertura .derecho {
+.section__seccionCobertura--derecho {
   display: flex;
   flex-direction: column;
   margin-top: 5rem; }
@@ -298,44 +295,42 @@ section table {
 /* -------------------------------------------------------------------------- */
 /*                            ESTILOS PARA "COTIZA"                           */
 /* -------------------------------------------------------------------------- */
-.seccionCotiza {
+.section__seccionCotiza {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
   justify-content: center;
   width: 70vw;
   height: 64vh; }
+  .section__seccionCotiza .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60vh; }
+    .section__seccionCotiza .formulario .formulario section {
+      display: flex;
+      flex-direction: column;
+      margin: 0%; }
 
-.seccionCotiza p {
+.section__seccionCotiza p {
   margin-top: 1rem; }
 
-.seccionCotiza .izquierdo {
+.section__seccionCotiza--izquierdo {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-top: 4rem; }
 
-.seccionCotiza .derecho {
+.section__seccionCotiza--derecho {
   display: flex;
   flex-direction: column;
   width: 55%; }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 60vh; }
-
-.formulario section {
-  display: flex;
-  flex-direction: column;
-  margin: 0%; }
-
 /* -------------------------------------------------------------------------- */
 /*                            ESTILOS PARA "CONTACTO"                           */
 /* -------------------------------------------------------------------------- */
-.seccionContacto {
+.section__seccionContacto {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
@@ -344,15 +339,18 @@ section table {
   width: 70vw;
   height: 64vh; }
 
-.seccionContacto p {
+.section__seccionContacto p {
   margin-top: 1rem; }
 
 .formularioContacto {
   display: flex;
   flex-direction: row;
   height: 100%; }
+  .formularioContacto textarea {
+    border-color: darkgray;
+    resize: none; }
 
-.formularioContacto .izquierdo {
+.formularioContacto--izquierdo {
   display: flex;
   align-items: flex-start;
   margin: 5rem 0 4rem 2rem;
@@ -360,7 +358,7 @@ section table {
   flex-direction: column;
   width: 50%; }
 
-.formularioContacto .derecho {
+.formularioContacto--derecho {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
@@ -368,10 +366,6 @@ section table {
   align-items: flex-start;
   justify-content: space-around;
   width: 50%; }
-
-textarea {
-  border-color: darkgray;
-  resize: none; }
 
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS PARA FOOTER                            */
@@ -381,7 +375,7 @@ textarea {
   justify-content: center;
   width: 100vw;
   margin: 0;
-  background-image: linear-gradient(to right, #33383b, black);
+  background-image: linear-gradient(to right, #33383b, #000000);
   border-radius: 0; }
 
 /* ----------------------------- LADO IZQUIERDO ----------------------------- */

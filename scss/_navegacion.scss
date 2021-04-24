@@ -20,18 +20,16 @@ li {
 	display: inline-block;
 	position: relative;
 	font-size: 18px;
-}
-
-li:hover {
-	position: relative;
-	transform: scale(1.2) skewY(-3deg);
-}
-
-li a {
-	color: white;
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	text-decoration: none;
+	:hover {
+		position: relative;
+		transform: scale(1.2) skewY(-3deg);
+		a {
+			color: white;
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
+			text-decoration: none;
+		}
+	}
 }
 
 .nav__navegacion--activo {

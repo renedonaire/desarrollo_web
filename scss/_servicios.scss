@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA "SERVICIOS"                          */
 /* -------------------------------------------------------------------------- */
-.seccionServicios {
+.section__seccionServicios {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow: auto;
@@ -9,18 +9,18 @@
 	height: 64vh;
 }
 
-.seccionServicios .izquierdo {
+.section__seccionServicios--izquierdo {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.seccionServicios p {
+.section__seccionServicios p {
 	font-style: italic;
 }
 
-.seccionServicios .derecho {
+.section__seccionServicios--derecho {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -53,7 +53,7 @@ td {
 	border: 2px solid black;
 }
 
-section table {
+.section__seccionServicios table {
 	margin-top: 1.5rem;
 	margin-bottom: 2vh;
 }
