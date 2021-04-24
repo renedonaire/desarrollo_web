@@ -43,7 +43,7 @@ footer {
   height: 4vh; }
 
 .nav__navegacion {
-  background-image: linear-gradient(to left, #33383b, black);
+  background-image: linear-gradient(to left, #33383b, #000000);
   padding: 1rem; }
 
 ul {
@@ -68,11 +68,8 @@ li a {
   font-weight: 400;
   text-decoration: none; }
 
-li a:hover {
-  color: yellow; }
-
 .nav__navegacion--activo {
-  color: orange !important; }
+  color: #FFA500 !important; }
 
 /* ---------------------------------- TEXTO --------------------------------- */
 h1 {

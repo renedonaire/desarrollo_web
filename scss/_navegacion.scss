@@ -4,7 +4,7 @@
 }
 
 .nav__navegacion {
-	background-image: linear-gradient(to left, #33383b, black);
+	background-image: linear-gradient(to left, $colorClaro, $colorOscuro);
 	padding: 1rem;
 }
 
@@ -34,10 +34,6 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
-	color: yellow;
-}
-
 .nav__navegacion--activo {
-	color: orange !important;
+	color: $colorActivo !important;
 }

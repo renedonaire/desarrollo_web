@@ -1,12 +1,15 @@
-@import "comunes.scss";
-@import "navegacion.scss";
-@import "texto.scss";
-@import "inicio.scss";
-@import "nosotros.scss";
-@import "servicios.scss";
-@import "cobertura.scss";
-@import "cotiza.scss";
-@import "contacto.scss";
-@import "footer.scss";
-@import "formularios.scss";
+$colorOscuro: #000000;
+$colorClaro: #33383b;
+$colorActivo:  #FFA500;
 
+@import "comunes";
+@import "navegacion";
+@import "texto";
+@import "inicio";
+@import "nosotros";
+@import "servicios";
+@import "cobertura";
+@import "cotiza";
+@import "contacto";
+@import "footer";
+@import "formularios";
