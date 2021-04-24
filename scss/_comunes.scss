@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------------------- */
+/*                                    RESET                                   */
+/* -------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                    ESTILOS COMUNES A TODOS LOS ARCHIVOS                    */
+/* -------------------------------------------------------------------------- */
+main {
+	/*Revisar imagen de fondo. Se puede generar como vector? */
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 10vh 64vh;
+	gap: 0px 0px;
+	grid-template-areas:
+		"up up up up up up up"
+		"main main main main main main main";
+	justify-items: center;
+	background-image: url(../images/fondo.png);
+	background-size: 100vw;
+	height: 75vh;
+}
+
+section {
+	grid-column: 2 / span 5;
+	justify-items: center;
+	background-color: lightgray;
+	border-radius: 1rem;
+}
+
+section article {
+	width: 90%;
+	height: auto;
+	padding: 2em;
+}
+
+footer {
+	background-color: gray;
+	text-align: center;
+	height: 15vh;
+}

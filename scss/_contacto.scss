@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- */
+/*                            ESTILOS PARA "CONTACTO"                           */
+/* -------------------------------------------------------------------------- */
+.seccionContacto {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
+	flex-direction: column;
+	justify-content: center;
+	width: 70vw;
+	height: 64vh;
+}
+
+.seccionContacto p {
+	margin-top: 1rem;
+}
+
+.formularioContacto {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+.formularioContacto .izquierdo {
+	display: flex;
+	align-items: flex-start;
+	margin: 5rem 0 4rem 2rem;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 50%;
+}
+
+.formularioContacto .derecho {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	margin-left: 2rem;
+	align-items: flex-start;
+	justify-content: space-around;
+	width: 50%;
+}
+
+textarea {
+	border-color: darkgray;
+	resize: none;
+}
