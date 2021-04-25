@@ -18,9 +18,9 @@
     </head>
 
 
-<!-- ----------------------------------------------------------------------- -->
-<!--                         ENCABEZADO Y NAVEGACION                         -->
-<!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                         ENCABEZADO Y NAVEGACION                         -->
+    <!-- ----------------------------------------------------------------------- -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark nav__navegacion">
             <!-- Logo -->
@@ -77,53 +77,93 @@
     </header>
 
 
-<!-- ----------------------------------------------------------------------- -->
-<!--                            CUERPO PRINCIPAL                             -->
-<!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            CUERPO PRINCIPAL                             -->
+    <!-- ----------------------------------------------------------------------- -->
     <main>
-        <!-- Sección Servicios -->
+        <!--Sección Servicios-->
         <h1>Servicios</h1>
-        <!-- Si las secciones no tienen el mismo alto se pierde la alineación - porqué?-->
-        <section class="section__seccionServicios">
-            <article class="section__seccionServicios--izquierdo">
-                <h2>Algunos de nuestros Servicios:</h2>
-                <table>
-                    <tr>
-                        <th>Servicio:</th>
-                        <th>Incluye:</th>
-                        <th>Su precio:</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Reparto de paquetes</strong></td>
-                        <td>Optimización de ruta, prueba de entrega</td>
-                        <td>$2.500 por unidad</td>
-                    </tr>
-                    <td> <strong>Transporte hasta 1m3</strong></td>
-                    <td>Paletizado, carga y descarga a piso</td>
-                    <td>$40.000 m3</td>
-                    <tr>
-                        <td> <strong>Servicio de encargos</strong></td>
-                        <td>Retiro de compras, encargos simples</td>
-                        <td>$4.000 por punto</td>
-                    </tr>
-                    <tr>
-                        <td> <strong>Alimentos congelados</strong></td>
-                        <td>Certificado cadena de frío</td>
-                        <td>**Contáctenos</td>
-                    </tr>
-                </table>
-                <p>Estos son sólo algunos ejemplos de los servicios más comunes. ¿Tiene alguna necesidad especial? ¿Sus envíos tienen algún requerimiento específico? ¡Contáctenos para evaluar la mejor solución!</p>
-            </article>
-            <article class="section__seccionServicios--derecho">
-                <video class="video" src="../videos/production ID 4169341.mp4" autoplay loop controls
-                    title="Video de empresa"></video>
-            </article>
+        <!-- Items visibles en pantallas más grandes, sin scroll -->
+        <section class="section__seccionServicios d-none d-md-block overflow-hidden">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <video class="video" src="../videos/production ID 4169341.mp4" autoplay loop controls
+                        title="Video de empresa"></video>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h2>Algunos de <br> nuestros Servicios:</h2>
+                    <table>
+                        <tr>
+                            <th>Servicio:</th>
+                            <th>Incluye:</th>
+                            <th>Su precio:</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Reparto de paquetes</strong></td>
+                            <td>Optimización de ruta, prueba de entrega</td>
+                            <td>$2.500 por unidad</td>
+                        </tr>
+                        <td> <strong>Transporte hasta 1m3</strong></td>
+                        <td>Paletizado, carga y descarga a piso</td>
+                        <td>$40.000 m3</td>
+                        <tr>
+                            <td> <strong>Servicio de encargos</strong></td>
+                            <td>Retiro de compras, encargos simples</td>
+                            <td>$4.000 por punto</td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Alimentos congelados</strong></td>
+                            <td>Certificado cadena de frío</td>
+                            <td>**Contáctenos</td>
+                        </tr>
+                    </table>
+                    <p>Estos son sólo algunos ejemplos de los servicios más comunes. ¿Tiene alguna necesidad especial?
+                        ¿Sus envíos tienen algún requerimiento específico? ¡Contáctenos para evaluar la mejor solución!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
+        <section class="section__seccionNosotros d-md-none overflow-auto">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <video class="video" src="../videos/production ID 4169341.mp4" autoplay loop controls
+                        title="Video de empresa"></video>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <table>
+                        <tr>
+                            <th>Servicio:</th>
+                            <th>Incluye:</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Reparto de paquetes</strong></td>
+                            <td>Optimización de ruta, prueba de entrega</td>
+                        </tr>
+                            <td> <strong>Transporte hasta 1m3</strong></td>
+                            <td>Paletizado, carga y descarga a piso</td>
+                        <tr>
+                            <td> <strong>Servicio de encargos</strong></td>
+                            <td>Retiro de compras, encargos simples</td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Alimentos congelados</strong></td>
+                            <td>Certificado cadena de frío</td>
+                        </tr>
+                    </table>
+                    <p>Estos son sólo algunos ejemplos de los servicios más comunes. ¿Tiene alguna necesidad especial?
+                        ¿Sus envíos tienen algún requerimiento específico? ¡Contáctenos para evaluar la mejor solución!
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
 
-<!-- ----------------------------------------------------------------------- -->
-<!--                              PIE DE PAGINA                              -->
-<!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              PIE DE PAGINA                              -->
+    <!-- ----------------------------------------------------------------------- -->
     <footer>
         <!--¿Se puede repetir sólo una vez y llamarlo en cada documento?-->
         <section class="row footer__seccionFooter">

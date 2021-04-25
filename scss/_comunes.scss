@@ -28,7 +28,7 @@ main {
 section {
 	grid-column: 2 / span 5;
 	justify-items: center;
-	background-color: lightgray;
+	background-color: $colorFondo ;
 	border-radius: 1rem;
 }
 
