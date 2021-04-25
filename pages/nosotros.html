@@ -83,42 +83,74 @@
     <main>
         <!--Sección Nosotros-->
         <h1>Nosotros</h1>
-        <section class="container section__seccionNosotros">
+        <!-- Items visibles en pantallas más grandes, sin scroll -->
+        <section class="section__seccionNosotros d-none d-md-block overflow-hidden">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <div class="container my-4">
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-12 mb-4">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(58).jpg"
-                                    class="img-fluid mb-4" alt="">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(66).jpg"
-                                    class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
-                            </div>
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg"
-                                    class="img-fluid mb-4" alt="" data-wow-delay="0.1s">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(64).jpg"
-                                    class="img-fluid mb-4" alt="" data-wow-delay="0.4s">
-                            </div>
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(77).jpg"
-                                    class="img-fluid mb-4" alt="" data-wow-delay="0.2s">
-                                <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(67).jpg"
-                                    class="img-fluid mb-4" alt="" data-wow-delay="0.5s">
-                            </div>
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12">
+                            <img src="../images/van.jpg" class="imagen img-fluid mb-2" alt="van">
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6">
+                            <img src="../images/equipo.jpg" class="imagen img-fluid mb-2" alt="equipo">
+                            <img src="../images/inventario.jpg" class="imagen img-fluid mb-2" alt="inventario">
+                            <img src="../images/carga.jpg" class="imagen img-fluid mb-2" alt="carga">
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6">
+                            <img src="../images/camioneta.jpg" class="imagen img-fluid mb-2" alt="camioneta">
+                            <img src="../images/bodega.jpg" class="imagen img-fluid mb-2" alt="bodega">
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="text">
-                        <h4> Lorem Ipsum is simply dummy </h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Con 12 años de experiencia en transportes, mudanzas y delivery, <strong>Fletes Juan</strong>
+                        es su mejor opción para cubrir sus necesidades logísticas. <br> Contamos con personal muy capacitado,
+                        vehículos de diversas clases y capacidades y un centro de bodegas de última generación para
+                        recibir sus paquetes.<br><br>
+                        Nuestro personal y sistemas están preparados para recibir desde un paquete a todos sus
+                        envíos diarios, ya sean cajas, paquetes, bolsas, alimentos y congelados, hasta 1 metro cúbico y
+                        300 kilogramos de peso. Dentro de nuestro servicio está el seguimiento en línea de su paquete y
+                        la evidencia de recepción de los mismos.</p>
+                    <button class="boton">Contacto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
+        <section class="section__seccionNosotros d-md-none overflow-auto">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12">
+                            <img src="../images/van.jpg" class="imagen img-fluid mb-2" alt="van">
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6">
+                            <img src="../images/equipo.jpg" class="imagen img-fluid mb-2" alt="equipo">
+                            <img src="../images/inventario.jpg" class="imagen img-fluid mb-2" alt="inventario">
+                            <img src="../images/carga.jpg" class="imagen img-fluid mb-2" alt="carga">
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6">
+                            <img src="../images/camioneta.jpg" class="imagen img-fluid mb-2" alt="camioneta">
+                            <img src="../images/bodega.jpg" class="imagen img-fluid mb-2" alt="bodega">
+                        </div>
                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <p>Con 12 años de experiencia en transportes, mudanzas y delivery, <strong>Fletes Juan</strong>
+                        es su mejor opción para cubrir sus necesidades logísticas. <br> Contamos con personal muy capacitado,
+                        vehículos de diversas clases y capacidades y un centro de bodegas de última generación para
+                        recibir sus paquetes.<br><br>
+                        Nuestro personal y sistemas están preparados para recibir desde un paquete a todos sus
+                        envíos diarios, ya sean cajas, paquetes, bolsas, alimentos y congelados, hasta 1 metro cúbico y
+                        300 kilogramos de peso. Dentro de nuestro servicio está el seguimiento en línea de su paquete y
+                        la evidencia de recepción de los mismos.</p>
+                    <button class="boton">Contacto</button>
                 </div>
             </div>
         </section>
@@ -168,26 +200,3 @@
     </footer>
 
 </html>
-
-
-<!-- <p>Con 12 años de experiencia en transportes, mudanzas y delivery, <strong>Fletes Juan</strong>
-                        es su
-                        mejor opción para cubrir sus necesidades logísticas. Contamos con personal muy capacitado,
-                        vehículos
-                        de diversas clases y capacidades y un centro de bodegas de última generación para recibir
-                        sus
-                        paquetes.<br><br>
-                        Nuestro personal y sistemas están preparados para recibir desde un paquete a todos sus
-                        envíos
-                        diarios, ya sean cajas, paquetes, bolsas, alimentos y congelados, hasta 1 metro cúbico y 200
-                        kilogramos de peso. Dentro de nuestro servicio está el seguimiento en línea de su paquete y
-                        la
-                        evidencia de recepción de los mismos.</p>
-                    <button class="boton">Contacto</button> -->
-
-<!-- <img class="imagen imagenUno" src="../images/van.jpg" alt="van">
-                <img class="imagen imagenDos" src="../images/equipo.jpg" alt="equipo">
-                <img class="imagen imagenTres" src="../images/inventario.jpg" alt="inventario">
-                <img class="imagen imagenCuatro" src="../images/carga.jpg" alt="carga">
-                <img class="imagen imagenCinco" src="../images/camioneta.jpg" alt="camioneta">
-                <img class="imagen imagenSeis" src="../images/bodega.jpg" alt="bodega"> -->

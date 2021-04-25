@@ -149,69 +149,17 @@ p {
 .section__seccionNosotros {
   display: flex;
   flex-wrap: nowrap;
-  overflow: auto;
   justify-content: center;
   align-items: flex-start;
   width: 70vw;
   height: 64vh;
-  overflow: hidden; }
-
-.section__seccionNosotros--izquierdo {
-  display: grid;
-  grid-template-columns: 35% 35% 30%;
-  grid-template-rows: repeat(3, auto);
-  padding: 1rem;
-  width: 80%;
-  gap: 10px;
-  margin: 0; }
-
-.imagenUno {
-  width: 100%;
-  height: 100%;
-  grid-column: 1;
-  grid-row: 1 / 4; }
-
-.imagenDos {
-  width: 100%;
-  height: 100%;
-  grid-column: 2;
-  grid-row: 1; }
-
-.imagenTres {
-  width: 100%;
-  height: 100%;
-  grid-column: 2;
-  grid-row: 2; }
-
-.imagenCuatro {
-  width: 100%;
-  height: 100%;
-  grid-column: 2;
-  grid-row: 3; }
-
-.imagenCinco {
-  width: 100%;
-  height: 100%;
-  grid-column: 3;
-  grid-row: 1 / 3; }
-
-.imagenSeis {
-  width: 100%;
-  height: 100%;
-  grid-column: 3;
-  grid-row: 3; }
+  padding: 2rem; }
 
 .imagen:hover {
   transform: skewY(-5deg) scale(0.8); }
 
 .section__seccionNosotros p {
   margin-bottom: 2rem; }
-
-.section__seccionNosotros--derecho {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  align-items: flex-start; }
 
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA "SERVICIOS"                          */
