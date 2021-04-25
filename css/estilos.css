@@ -94,7 +94,7 @@ h4 {
   text-align: center; }
 
 p {
-  font-size: 0.8vw;
+  font-size: 1rem;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -146,7 +146,7 @@ p {
 /* -------------------------------------------------------------------------- */
 /*                           ESTILOS PARA "NOSOTROS"                          */
 /* -------------------------------------------------------------------------- */
-.seccionNosotros {
+.section__seccionNosotros {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
@@ -156,7 +156,7 @@ p {
   height: 64vh;
   overflow: hidden; }
 
-.seccionNosotros .izquierdo {
+.section__seccionNosotros--izquierdo {
   display: grid;
   grid-template-columns: 35% 35% 30%;
   grid-template-rows: repeat(3, auto);
@@ -204,10 +204,10 @@ p {
 .imagen:hover {
   transform: skewY(-5deg) scale(0.8); }
 
-.seccionNosotros p {
+.section__seccionNosotros p {
   margin-bottom: 2rem; }
 
-.seccionNosotros .derecho {
+.section__seccionNosotros--derecho {
   display: flex;
   width: 30%;
   flex-direction: column;
