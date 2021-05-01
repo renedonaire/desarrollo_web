@@ -1,8 +1,8 @@
 {
   "name": "cuarta_entrega",
   "version": "4.0.0",
-  "description": "Aplicando SASS",
-  "main": "index.js",
+  "description": "Cuarta entrega curso desarrollo web",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
