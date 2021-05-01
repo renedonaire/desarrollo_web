@@ -14,11 +14,25 @@
 	margin-bottom: 2rem;
 }
 
-.mapa{
-	width: 100%;
+.mapa {
 	margin-top: 1rem;
 }
 
-	.texto{
-		margin-top: 2rem;
-	}
+.mapa--movil {
+	margin-top: 1rem;
+	width: 50vw;
+	height: 30vh;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+.texto {
+	margin-top: 2rem;
+}
+
+.seccionCobertura__row{
+	height: 100%;
+}

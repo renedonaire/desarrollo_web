@@ -9,13 +9,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="transportes, despachos, delivery, encomiendas">
-        <meta name="description" content="Transporte y despacho de paquetes pequeños y medianos. Revisa nuestra área de cobertura.">
+        <meta name="description"
+            content="Transporte y despacho de paquetes pequeños y medianos. Revisa nuestra área de cobertura.">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
             integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/dde9c62a8e.js" crossorigin="anonymous"></script>
+        <script src="../javascript/map.js"></script>
         <title>Transportes Juan - Cobertura</title>
     </head>
 
@@ -87,14 +89,18 @@
         <h1>Cobertura</h1>
         <!-- Items visibles en pantallas más grandes, sin scroll -->
         <section class="section__seccionCobertura d-none d-md-block overflow-hidden">
-            <div class="row">
+            <div class="row seccionCobertura__row">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <!--Usar mapas de Google??-->
-                    <img class="mapa" src="../images/map.png" alt="Mapa de cobertura">
+                    <!--Usa mapas de Google-->
+                    <div id="map" class="map"></div>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyizHtx4Xsx2PGVx-8RXSWvECUYKrNvOw&callback=initMap&libraries=&v=weekly"
+                        async></script>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <h2>Zona de Cobertura</h2>
-                    <p class="texto">Nuestras oficinas están ubicadas en pleno centro, desde donde coordinamos las operaciones de
+                    <p class="texto">Nuestras oficinas están ubicadas en pleno centro, desde donde coordinamos las
+                        operaciones de
                         nuestra flota para toda la ciudad. Tenemos dos centros de recepción y almacenamiento de
                         paquetes, uno en la zona norte y otro en la zona sur.<br><br>
                         Nuestras operaciones normales cubren el área indicada en el mapa - todas las comunas de la
@@ -110,11 +116,12 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <!--Usar mapas de Google??-->
-                    <img class="mapa" src="../images/map.png" alt="Mapa de cobertura">
+                    <img class="mapa--movil" src="../images/map.png" alt="Mapa de cobertura">
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <h2>Zona de Cobertura</h2>
-                    <p class="texto">Nuestras oficinas están ubicadas en pleno centro, desde donde coordinamos las operaciones de
+                    <p class="texto">Nuestras oficinas están ubicadas en pleno centro, desde donde coordinamos las
+                        operaciones de
                         nuestra flota para toda la ciudad. Tenemos dos centros de recepción y almacenamiento de
                         paquetes, uno en la zona norte y otro en la zona sur.<br><br>
                         Nuestras operaciones normales cubren el área indicada en el mapa - todas las comunas de la

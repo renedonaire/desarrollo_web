@@ -220,11 +220,22 @@ td {
   margin-bottom: 2rem; }
 
 .mapa {
-  width: 100%;
   margin-top: 1rem; }
+
+.mapa--movil {
+  margin-top: 1rem;
+  width: 50vw;
+  height: 30vh; }
+
+#map {
+  height: 100%;
+  width: 100%; }
 
 .texto {
   margin-top: 2rem; }
+
+.seccionCobertura__row {
+  height: 100%; }
 
 /* -------------------------------------------------------------------------- */
 /*                            ESTILOS PARA "COTIZA"                           */
