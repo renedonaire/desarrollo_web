@@ -9,7 +9,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="transportes, despachos, delivery, encomiendas">
-        <meta name="description" content="Servicio de transporte y despacho de paquetes pequeños y medianos. Contáctanos">
+        <meta name="description"
+            content="Servicio de transporte y despacho de paquetes pequeños y medianos. Contáctanos">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
             integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
@@ -84,7 +85,8 @@
     <!-- ----------------------------------------------------------------------- -->
     <main>
         <h1>Contáctenos</h1>
-        <section class="section__seccionContacto">
+        <!-- Items visibles en pantallas más grandes, sin scroll -->
+        <section class="section__seccionContacto d-none d-md-flex overflow-hidden">
             <form class="formularioContacto" action="">
                 <section class="formularioContacto--izquierdo">
                     <select name="servicio" required>
@@ -101,11 +103,38 @@
                     <input class="casilla" type="checkbox" id="suscripcion" name="suscripcion" value="Si">
                 </section>
                 <section class="formularioContacto--derecho">
-                    <textarea name="consulta" id="consulta" cols="70" rows="18" placeholder="Escríbanos aquí"></textarea>
-                        <div>
-                            <input type="reset" class="boton" value="Limpiar">
-                            <input type="submit" class="boton" value="Enviar">
-                        </div>
+                    <textarea name="consulta" id="consulta" cols="70" rows="18"
+                        placeholder="Escríbanos aquí"></textarea>
+                    <div>
+                        <input type="reset" class="boton" value="Limpiar">
+                        <input type="submit" class="boton" value="Enviar">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+
+        <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
+        <section class="section__seccionCotiza d-md-none overflow-auto">
+            <form class="formulario form-group col-md-12 col-sm-12 col-sm-12" action="">
+                <section>
+                    <select name="servicio" required>
+                        <option value="" disabled selected hidden>Usted es Cliente tipo...:</option>
+                        <option value="Servicio Clase 1">Particular</option>
+                        <option value="Servicio Clase 2">Empresa</option>
+                        <option value="Servicio Clase 3">Gobierno</option>
+                    </select>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="email" id="email" name="email" placeholder="Correo">
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+                    <label for="suscripcion">¿Desea recibir noticias / ofertas?</label>
+                    <input class="casilla" type="checkbox" id="suscripcion" name="suscripcion" value="Si">
+                    <!-- Cómo coloco un selector de fechas?? -->
+                    <textarea name="consulta" id="consulta" placeholder="Escríbanos aquí"></textarea>
+                    <div>
+                        <input type="reset" class="boton" value="Limpiar">
+                        <input type="submit" class="boton" value="Enviar">
+                    </div>
                 </section>
             </form>
         </section>
