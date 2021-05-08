@@ -12,29 +12,29 @@
 
 /* Estilos para carousel */
 .carousel-caption h2 {
-	font-size: 2rem;
+	font-size: 3.5vh;
 	color: white;
 	text-shadow: 3px 3px 4px black;
 }
 
 .carousel-caption h3 {
-	font-size: 1.5rem;
+	font-size: 2.5vh;
 	color: white;
 	text-shadow: 3px 3px 4px black;
 }
 
 .carousel-caption--up {
 	position: absolute;
-	top: 5%;
+	top: 3%;
 }
 
 .carousel-caption--down{
 	position: absolute;
-	top: 50%;
+	top: 45%;
 }
 
 .carousel {
-	width: 100%
+	width: 100%;
 }
 
 .carousel-item{
@@ -43,7 +43,7 @@
 
 /* Truco para centrar la imagen en la vista móvil */
 .carousel-item__img {
-	height: 20%;
+	// height: 20%;
 	max-width: none;
 	left: 60%;
 	position: relative;

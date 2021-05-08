@@ -14,7 +14,7 @@ main {
 	/*Revisar imagen de fondo. Se puede generar como vector? */
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: 8vh 65vh;
+	grid-template-rows: 8vh 64vh;
 	gap: 0px 0px;
 	grid-template-areas:
 		"up up up up up up up"
@@ -34,7 +34,7 @@ section {
 
 section article {
 	width: 90%;
-	height: auto;
+	height: 100%;
 	padding: 2em;
 }
 

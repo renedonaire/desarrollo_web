@@ -14,7 +14,7 @@ main {
   /*Revisar imagen de fondo. Se puede generar como vector? */
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 8vh 65vh;
+  grid-template-rows: 8vh 64vh;
   gap: 0px 0px;
   grid-template-areas: "up up up up up up up" "main main main main main main main";
   justify-items: center;
@@ -30,7 +30,7 @@ section {
 
 section article {
   width: 90%;
-  height: auto;
+  height: 100%;
   padding: 2em; }
 
 footer {
@@ -114,22 +114,22 @@ p {
 
 /* Estilos para carousel */
 .carousel-caption h2 {
-  font-size: 2rem;
+  font-size: 3.5vh;
   color: white;
   text-shadow: 3px 3px 4px black; }
 
 .carousel-caption h3 {
-  font-size: 1.5rem;
+  font-size: 2.5vh;
   color: white;
   text-shadow: 3px 3px 4px black; }
 
 .carousel-caption--up {
   position: absolute;
-  top: 5%; }
+  top: 3%; }
 
 .carousel-caption--down {
   position: absolute;
-  top: 50%; }
+  top: 45%; }
 
 .carousel {
   width: 100%; }
@@ -139,7 +139,6 @@ p {
 
 /* Truco para centrar la imagen en la vista móvil */
 .carousel-item__img {
-  height: 20%;
   max-width: none;
   left: 60%;
   position: relative;
