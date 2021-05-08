@@ -85,10 +85,10 @@
     <!-- ----------------------------------------------------------------------- -->
     <main>
         <h1>Contáctenos</h1>
-        <!-- Items visibles en pantallas más grandes, sin scroll -->
-        <section class="section__seccionContacto d-none d-md-flex overflow-hidden">
+        <!-- Items visibles en pantallas más grandes -->
+        <section class="section__seccionContacto d-none d-lg-flex overflow-auto">
             <form class="formularioContacto" action="">
-                <section class="formularioContacto--izquierdo">
+                <section class="formularioContacto--izquierdo col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                     <select name="servicio" required>
                         <option value="" disabled selected hidden>Usted es Cliente tipo...:</option>
                         <option value="Servicio Clase 1">Particular</option>
@@ -102,8 +102,8 @@
                     <label for="suscripcion">¿Desea recibir noticias / ofertas?</label>
                     <input class="casilla" type="checkbox" id="suscripcion" name="suscripcion" value="Si">
                 </section>
-                <section class="formularioContacto--derecho">
-                    <textarea name="consulta" id="consulta" cols="70" rows="18"
+                <section class="formularioContacto--derecho col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <textarea name="consulta" id="consulta" cols="70" rows="15"
                         placeholder="Escríbanos aquí"></textarea>
                     <div>
                         <input type="reset" class="boton" value="Limpiar">
@@ -113,8 +113,8 @@
             </form>
         </section>
         <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
-        <section class="section__seccionCotiza d-md-none overflow-auto">
-            <form class="formulario form-group col-md-12 col-sm-12 col-sm-12" action="">
+        <section class="section__seccionCotiza d-lg-none overflow-auto">
+            <form class="formularioContacto form-group col-md-12 col-sm-12 col-sm-12" action="">
                 <section>
                     <select name="servicio" required>
                         <option value="" disabled selected hidden>Usted es Cliente tipo...:</option>
