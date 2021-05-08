@@ -86,16 +86,16 @@
     <main>
         <!-- Sección Cotiza -->
         <h1>Cotice aquí:</h1>
-        <!-- Items visibles en pantallas más grandes, sin scroll -->
-        <section class="section__seccionCotiza d-none d-md-flex overflow-hidden">
-            <article class="section__seccionCotiza--izquierdo">
+        <!-- Items visibles en pantallas más grandes, -->
+        <section class="section__seccionCotiza d-none d-md-flex overflow-auto">
+            <article class="section__seccionCotiza--izquierdo col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2>Seleccione</h2>
                 <p>Desde la lista desplegable, el tipo de servicio que requiere. <br>
                     En el resto de los campos complete los datos solicitados. <br><br>
                     Le enviaremos un correo con la cotización por nuestros servicios.</p>
             </article>
-            <article class="section__seccionCotiza--derecho">
-                <form class="formulario form-horizontal col-md-12 col-sm-12 col-sm-12" action="">
+            <article class="section__seccionCotiza--derecho col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <form class="formulario form-horizontal" action="">
                     <section>
                         <select name="servicio" required>
                             <option value="" disabled selected hidden>Elije tu servicio:</option>
@@ -120,7 +120,7 @@
         </section>
         <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
         <section class="section__seccionCotiza d-md-none overflow-auto">
-            <form class="formulario form-group col-md-12 col-sm-12 col-sm-12" action="">
+            <form class="formulario form-group col-md-12 col-sm-12 col-xs-12" action="">
                 <section>
                     <select name="servicio" required>
                         <option value="" disabled selected hidden>Elije tu servicio:</option>
