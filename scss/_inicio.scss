@@ -24,17 +24,21 @@
 }
 
 .carousel-caption--up {
-	position: fixed;
-	top: 25%;
+	position: absolute;
+	top: 5%;
 }
 
 .carousel-caption--down{
-	position: fixed;
-	bottom: 15%;
+	position: absolute;
+	top: 50%;
 }
 
 .carousel {
 	width: 100%
+}
+
+.carousel-item{
+	height: 100%;
 }
 
 /* Truco para centrar la imagen en la vista móvil */
