@@ -345,14 +345,15 @@ textarea {
 .footer__seccionFooter--centro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  height: 100%; }
+  height: 100%;
+  margin-right: 15vw; }
 
 .footer__seccionFooter--centro .footerInterior {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; }
+  margin-bottom: 1rem; }
 
 .footer__seccionFooter--centro .footerInterior p,
 a {
