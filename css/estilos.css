@@ -125,11 +125,11 @@ p {
 
 .carousel-caption--up {
   position: absolute;
-  top: 3%; }
+  top: 5%; }
 
 .carousel-caption--down {
   position: absolute;
-  top: 45%; }
+  top: 60%; }
 
 .carousel {
   width: 100%; }
