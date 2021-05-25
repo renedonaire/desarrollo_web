@@ -38,6 +38,10 @@ footer {
   text-align: center;
   height: 15vh; }
 
+.textoCelular {
+  padding: 1rem;
+  hyphens: none; }
+
 /* ------------------------------- NAVEGACION ------------------------------- */
 .logo {
   height: 4vh; }
@@ -162,7 +166,8 @@ p {
   transform: skewY(-5deg) scale(0.8); }
 
 .section__seccionNosotros p {
-  margin-bottom: 2rem; }
+  margin: 0 1rem 2rem 0;
+  hyphens: none; }
 
 /* -------------------------------------------------------------------------- */
 /*                          ESTILOS PARA "SERVICIOS"                          */
@@ -235,7 +240,8 @@ td {
   width: 100%; }
 
 .texto {
-  margin-top: 2rem; }
+  margin: 2rem 1rem 2rem 0;
+  hyphens: none; }
 
 .seccionCobertura__row {
   height: 100%; }
