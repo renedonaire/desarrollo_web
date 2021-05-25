@@ -429,17 +429,18 @@ input[type="email"] {
 
 .boton {
   width: 6rem;
-  background-color: orange;
-  border-radius: 10px;
-  color: black;
+  background-color: #000000;
+  border-radius: 15px;
+  color: #FFFFE5;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: none; }
 
 .boton:hover {
-  color: white;
-  background-color: orangered;
-  transform: skewY(-5deg); }
+  color: #000000;
+  background-color: #FFA500;
+  transform: scale(1.1); }
