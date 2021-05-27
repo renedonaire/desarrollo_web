@@ -303,10 +303,17 @@ textarea {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
-  flex-direction: column;
   justify-content: center;
   width: 70vw;
-  height: 64vh; }
+  height: 64vh;
+  padding: 2rem; }
+  .section__seccionContacto .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section__seccionContacto .formulario .formulario section {
+      display: flex;
+      flex-direction: column; }
 
 .section__seccionContacto p {
   margin-top: 1rem; }
@@ -319,22 +326,30 @@ textarea {
     border-color: darkgray;
     resize: none; }
 
+.formularioContacto--celular {
+  flex-direction: column;
+  align-items: flex-start; }
+
 .formularioContacto--izquierdo {
   display: flex;
-  align-items: flex-start;
-  margin: 4rem 0 4rem 2rem;
-  justify-content: space-evenly;
   flex-direction: column;
-  width: 50%; }
+  width: 45%;
+  margin: 0 1rem 0 1rem; }
 
 .formularioContacto--derecho {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 50%; }
+  width: 45%;
+  margin: 0 1rem 0 1rem; }
+
+.section__seccionContacto__imagen {
+  margin-top: 2rem;
+  width: 100%;
+  height: 80%;
+  object-fit: cover; }
+
+.boton--moviles {
+  margin: 0.5rem 0 0 0 !important; }
 
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS PARA FOOTER                            */
