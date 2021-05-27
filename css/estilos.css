@@ -264,17 +264,15 @@ td {
   overflow: auto;
   justify-content: center;
   width: 70vw;
-  height: 64vh; }
+  height: 64vh;
+  padding: 2rem; }
   .section__seccionCotiza .formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 60vh; }
+    justify-content: center; }
     .section__seccionCotiza .formulario .formulario section {
       display: flex;
-      flex-direction: column;
-      margin: 0%; }
+      flex-direction: column; }
 
 .section__seccionCotiza p {
   margin-top: 1rem; }
@@ -282,13 +280,18 @@ td {
 .section__seccionCotiza--izquierdo {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  margin-top: 4rem; }
+  width: 45%;
+  margin: 0 1rem 0 1rem; }
 
 .section__seccionCotiza--derecho {
   display: flex;
   flex-direction: column;
-  width: 55%; }
+  width: 45%;
+  margin: 0 1rem 0 1rem; }
+
+.section__seccionCotiza__imagen {
+  height: 80%;
+  object-fit: cover; }
 
 textarea {
   width: 100%; }
@@ -416,7 +419,7 @@ input[type="text"] {
   color: darkgrey;
   width: 100%;
   padding: 6px 10px;
-  margin: 8px 0;
+  margin: 0 0 1rem 0;
   border: 2px solid gray;
   border-radius: 4px; }
 
@@ -432,7 +435,7 @@ input[type="email"] {
   color: darkgrey;
   width: 100%;
   padding: 6px 10px;
-  margin: 8px 0;
+  margin: 0 0 1rem 0;
   border: 2px solid gray;
   border-radius: 4px; }
 
@@ -453,3 +456,7 @@ input[type="email"] {
   color: #000000;
   background-color: #FFA500;
   transform: scale(1.1); }
+
+select {
+  width: 100%;
+  margin: 0 0 1rem 0; }

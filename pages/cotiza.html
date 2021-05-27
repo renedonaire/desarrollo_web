@@ -88,17 +88,12 @@
         <h1>Cotice aquí:</h1>
         <!-- Items visibles en pantallas más grandes, -->
         <section class="section__seccionCotiza d-none d-md-flex overflow-auto">
-            <article class="section__seccionCotiza--izquierdo col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h2>Seleccione</h2>
-                <p>Desde la lista desplegable, el tipo de servicio que requiere. <br>
-                    En el resto de los campos complete los datos solicitados. <br><br>
-                    Le enviaremos un correo con la cotización por nuestros servicios.</p>
-            </article>
-            <article class="section__seccionCotiza--derecho col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <article class="section__seccionCotiza--izquierdo col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
                 <form class="formulario form-horizontal" action="">
                     <section>
+                        <label for="servicio">Seleccione el tipo de servicio:</label>
                         <select name="servicio" required>
-                            <option value="" disabled selected hidden>Elije tu servicio:</option>
+                            <option value="" disabled selected hidden>Elija clase de servicio:</option>
                             <option value="Servicio Clase 1">Servicio Clase 1</option>
                             <option value="Servicio Clase 2">Servicio Clase 2</option>
                             <option value="Servicio Clase 3">Servicio Clase 3</option>
@@ -106,10 +101,14 @@
                         <!-- Cómo coloco un selector de fechas?? -->
                     </section>
                     <section>
-                        <input type="text" id="nombre" name="nombre" value="Tu nombre">
-                        <input type="text" id="direccion" name="direccion" value="Tu dirección">
-                        <input type="email" id="email" name="email" value="Tu correo">
-                        <input type="text" id="telefono" name="telefono" value="Tu teléfono">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" value="Su nombre">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" value="Su dirección">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="Su correo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" value="Su teléfono">
                         <!--¿Cómo se aplica estilo a los placeholders?-->
                     </section>
                     <section>
@@ -117,13 +116,16 @@
                     </section>
                 </form>
             </article>
+            <article class="section__seccionCotiza--derecho col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                <img class="section__seccionCotiza__imagen" src="../images/cotizacion.jpg" alt="equipo">
+            </article>
         </section>
         <!-- Items visibles en pantallas más pequeñas, con scroll habilitado -->
         <section class="section__seccionCotiza d-md-none overflow-auto">
             <form class="formulario form-group col-md-12 col-sm-12 col-xs-12" action="">
                 <section>
                     <select name="servicio" required>
-                        <option value="" disabled selected hidden>Elije tu servicio:</option>
+                        <option value="" disabled selected hidden>Elija la clase de servicio:</option>
                         <option value="Servicio Clase 1">Servicio Clase 1</option>
                         <option value="Servicio Clase 2">Servicio Clase 2</option>
                         <option value="Servicio Clase 3">Servicio Clase 3</option>
@@ -131,10 +133,10 @@
                     <!-- Cómo coloco un selector de fechas?? -->
                 </section>
                 <section>
-                    <input type="text" id="nombre" name="nombre" value="Tu nombre">
-                    <input type="text" id="direccion" name="direccion" value="Tu dirección">
-                    <input type="email" id="email" name="email" value="Tu correo">
-                    <input type="text" id="telefono" name="telefono" value="Tu teléfono">
+                    <input type="text" id="nombre" name="nombre" value="Su nombre">
+                    <input type="text" id="direccion" name="direccion" value="Su dirección">
+                    <input type="email" id="email" name="email" value="Su correo">
+                    <input type="text" id="telefono" name="telefono" value="Su teléfono">
                     <!--¿Cómo se aplica estilo a los placeholders?-->
                 </section>
                 <section>
@@ -173,9 +175,12 @@
             <!--Columna derecha-->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
                 <article class="footer__seccionFooter--derecho">
-                    <a href="https://www.facebook.com/rene.donairebozo" target="_blank"><i class="iconoDerecho fa fa-facebook"></i></a>
-                    <a href="https://wa.me/56988107373?text='Consulta por Transportes Juan'" target="_blank"><i class="iconoDerecho fa fa-whatsapp"></i></a>
-                    <a href="https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw" target="_blank"><i class="iconoDerecho fa fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/rene.donairebozo" target="_blank"><i
+                            class="iconoDerecho fa fa-facebook"></i></a>
+                    <a href="https://wa.me/56988107373?text='Consulta por Transportes Juan'" target="_blank"><i
+                            class="iconoDerecho fa fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw" target="_blank"><i
+                            class="iconoDerecho fa fa-youtube"></i></a>
                 </article>
         </section>
 

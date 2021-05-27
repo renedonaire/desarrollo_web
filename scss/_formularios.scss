@@ -5,7 +5,7 @@ input[type="text"] {
 	color: darkgrey;
 	width: 100%;
 	padding: 6px 10px;
-	margin: 8px 0;
+	margin: 0 0 1rem 0;
 	border: 2px solid gray;
 	border-radius: 4px;
 }
@@ -23,7 +23,7 @@ input[type="email"] {
 	color: darkgrey;
 	width: 100%;
 	padding: 6px 10px;
-	margin: 8px 0;
+	margin: 0 0 1rem 0;
 	border: 2px solid gray;
 	border-radius: 4px;
 }
@@ -46,4 +46,9 @@ input[type="email"] {
 	color: $colorOscuro;
 	background-color: $colorActivo;
 	transform: scale(1.1);
+}
+
+select {
+	width: 100%;
+	margin: 0 0 1rem 0;
 }
